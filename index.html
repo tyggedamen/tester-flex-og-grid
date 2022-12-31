@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tester flex og grid</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        /*  dette her kan sagtens ligge i style.css men her samles flex */
+.container{
+ display: flex; 
+            /* display flex som standart er på en linie */
+            /* display: inline-flex; */
+            /* display: inline-flex her ligger de i en box */
+
+            /* flex-direction: row er startart */
+            /* justify-content: flex-start er standart */
+            /* justify-content: space between. nr 1 og 5 hører til borderen/ container derefter kommer der luft imellem */
+            /* justify-content: spacearound . der er også luft mellem border og nr 1 og nr 5 */
+            /* justify-content: space evenly. så er der det samme luft mellem alle  */
+flex-wrap: wrap;
+            /* flex-wrap: nowrap er standart */
+            /*  flex-wrap er bedre end flex-wrap: nowwrap. med Wrap skaber den mere plads hvis du gør skærmen mindre osv. */
+
+            /* flex-direction= row er også standart */
+
+            /* align-items: stretch er standart. betyder at den holder fast i border uanset skærmstørrelse mm */
+            /* hvis man laver en box om items og bruger align-items: flex-start hænger de ved i toppen, flex-end hænger de i bunden. center er de i midten og hænger ved i venstre side. align-items: baseline er god til logo */
+        }
+    </style>
+
+</head>
+<body>
+    <!-- parent = flex contaioner -->
+<div class="container">
+
+    <!-- chrildren = flex-items -->
+    <div class="box  box-1">1</div>
+    <div class="box  box-2">2</div>
+    <div class="box  box-3">3</div>
+    <div class="box  box-4">4</div>
+    <div class="box  box-5">5</div>
+
+    <div class="box generic">G</div>
+    <div class="box generic">G</div>
+    <div class="box generic">G</div>
+    <div class="box generic">G</div> 
+   
+</div>
+<a href="banner.html">banner html</a>
+</body>
+</html>

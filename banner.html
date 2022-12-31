@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bannereksempel</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .hero{
+            min-height: 100vh;
+        background-image: url("flotsolnedgang.jpg");
+        background-position: center;
+        background-size: cover;
+        /*  cover betyder at den fylder hele siden */
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* align-items center er midten af papiret. justify-content center er blot center i toppen */
+        background-attachment: fixed;
+        /* attachment fixed når siden scroller på en blid måde, ikke alle mobiler kan bruge den  */
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 60px;
+            color: blue;
+        }
+        .banner{
+            min-height: 100vh;
+            background-color: rgb(76, 135, 115);
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>page title </h1>
+    </header>
+    <div class="banner"></div>
+        <a href="index.html">back home</a>
+    </header>
+    
+</body>
+</html>
